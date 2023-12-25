@@ -1,13 +1,109 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav{
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, #000000, #333333);
+}
+
+#home{
+  height: max-content;
+  padding: 1.1rem;
+  margin: 2.1rem 0;
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.563);
+}
+
+#home > h1{
+  margin-bottom: 1.7rem;
+  font-size: 1.7rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 0.7rem;
+}
+
+form > 
+input,
+textarea,
+button{
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+
+form > button{
+  background-color: rgba(0, 0, 0, 0.869);
+  color: white;
+}
+
+form > button:hover{
+  background-color: rgba(0, 0, 0, 0.703);
+}
+
+/*           TASKS               */
+
+.tasks-container{
+  display: flex;
+  margin-left: 20%;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 60%;
+}
+
+.task{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 0.6rem;
+  
+  /*background: linear-gradient(to right, #36454F, #1B2B34);*/
+  background: url(https://img.freepik.com/premium-vector/abstract-seamless-pattern-background-with-artistic-style_7505-1600.jpg);
+  opacity: 0.99;
+  color: #201f1f; /* Light gray text */
+  justify-content: space-between;
+  box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.563);
+}
+
+.task-content > h2{
+  font-size: 1.85rem;
+}
+
+.task-content > span{
+  font-size: 1.1rem;
+  color: rgba(42, 40, 40, 0.883);
+}
+
+.del-btn{
+  border: 2px solid transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(220, 20, 60, 0.729);
+  color: white;
+}
+
+.del-btn:hover{
+  background-color: red;
 }
