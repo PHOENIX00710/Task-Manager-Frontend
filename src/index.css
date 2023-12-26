@@ -8,11 +8,30 @@
   font-size: 1.125rem;
 }
 
-nav{
+.header{
   padding: 1.5rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
   color: white;
   background: linear-gradient(to right, #000000, #333333);
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  gap: 1.3rem;
+  font-size: x-small;
+  color: rgb(213, 205, 205);
+}
+
+.list-items{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.584);
+}
+
+.list-items:hover{
+  color: gray;
+  cursor: pointer;
 }
 
 #home{
